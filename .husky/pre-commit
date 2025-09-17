@@ -1,0 +1,11 @@
+#!/bin/sh
+# manual husky pre-commit hook that runs lint-staged
+# If you ran `npx husky install` this will run within husky environment.
+
+# prefer to source husky's helper if present
+if [ -f "$(dirname "$0")/_/husky.sh" ]; then
+  . "$(dirname "$0")/_/husky.sh"
+fi
+
+
+npx --no -- lint-staged

@@ -1,0 +1,13 @@
+{
+  "hello": "Xin chào",
+  "welcome": "Chào mừng",
+  "total_balance": "Tổng số dư",
+  "money": "{{amount}} đ",
+  "transactions_overview": "Tình hình thu chi",
+  "income": "Thu",
+  "expense": "Chi",
+  "difference": "Chênh lệch",
+  "history": "Lịch sử",
+  "limit_spending": "Hạn mức chi",
+  "savings": "Sổ tiết kiệm"
+}

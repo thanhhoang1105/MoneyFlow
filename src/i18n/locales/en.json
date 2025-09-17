@@ -1,0 +1,13 @@
+{
+  "hello": "Hello",
+  "welcome": "Welcome",
+  "total_balance": "Total balance",
+  "money": "{{amount}} đ",
+  "transactions_overview": "Transactions overview",
+  "income": "Income",
+  "expense": "Expense",
+  "difference": "Difference",
+  "history": "History",
+  "limit_spending": "Spending limit",
+  "savings": "Savings"
+}
