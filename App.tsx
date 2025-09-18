@@ -1,10 +1,10 @@
-import React from 'react';
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, View, Text, Button } from 'react-native';
+import i18n from 'i18next';
+import React from 'react';
+import { useTranslation } from 'react-i18next';
+import { Button, StyleSheet, Text, View } from 'react-native';
 import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
 import './src/i18n';
-import i18n from 'i18next';
-import { useTranslation } from 'react-i18next';
 
 const DemoApp: React.FC = () => {
   const { t } = useTranslation();
@@ -19,7 +19,7 @@ const DemoApp: React.FC = () => {
 
           <View style={styles.row}>
             <Button title="English" onPress={() => i18n.changeLanguage('en')} />
-            <View style={{ width: 12 }} />
+            <View style={styles.spacer} />
             <Button title="Tiếng Việt" onPress={() => i18n.changeLanguage('vi')} />
           </View>
         </View>
@@ -38,4 +38,5 @@ const styles = StyleSheet.create({
   subtitle: { color: '#64748b', marginBottom: 6 },
   balance: { fontSize: 28, fontWeight: '800', marginBottom: 18 },
   row: { flexDirection: 'row', marginTop: 12 },
+  spacer: { width: 12 },
 });

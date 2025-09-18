@@ -1,6 +1,8 @@
 // Flat config for ESLint v9
 const tsPlugin = require('@typescript-eslint/eslint-plugin');
 const tsParser = require('@typescript-eslint/parser');
+const reactPlugin = require('eslint-plugin-react');
+const reactHooksPlugin = require('eslint-plugin-react-hooks');
 
 module.exports = [
   {
@@ -15,6 +17,8 @@ module.exports = [
       globals: { JSX: 'readonly' },
     },
     plugins: {
+      react: reactPlugin,
+      'react-hooks': reactHooksPlugin,
       '@typescript-eslint': tsPlugin,
     },
     rules: {
